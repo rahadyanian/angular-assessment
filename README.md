@@ -21,10 +21,10 @@ Masukkan `nama lengkap` , `phone number` , `email` , `password`
 ## Registrasi Karyawan
 Masukkan data karyawan terdiri dari `username`,`nama depan`,`nama belakang`,`email`,`tanggal lahir`,`salary`,`status`,`group`,`deskripsi`
 
-#List Karyawan
+##List Karyawan
 Disini anda bisa melihat daftar data karyawan
 
-#Detail
+##Detail
 Klik button detail pada kolom aksi untuk melihat lebih jelas detail karyawan
 
 ## Development server
