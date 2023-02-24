@@ -3,11 +3,11 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
 ## Start DB Server
-Run 'json-server --watch db.json'
+Run `json-server --watch db.json`
 
 ## Start the App
-'npm install'
-'ng serve'
+`npm install`
+`ng serve`
 
 ## Development server
 
