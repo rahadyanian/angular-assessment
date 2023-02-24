@@ -12,6 +12,21 @@ Run `json-server --watch db.json`
 `npm install`
 `ng serve`
 
+## Login
+Login jika sudah punya akun, jika belum register terlebih dahulu "klik link di bawah button Login"
+
+## Register
+Masukkan `nama lengkap` , `phone number` , `email` , `password`
+
+## Registrasi Karyawan
+Masukkan data karyawan terdiri dari `username`,`nama depan`,`nama belakang`,`email`,`tanggal lahir`,`salary`,`status`,`group`,`deskripsi`
+
+#List Karyawan
+Disini anda bisa melihat daftar data karyawan
+
+#Detail
+Klik button detail pada kolom aksi untuk melihat lebih jelas detail karyawan
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
