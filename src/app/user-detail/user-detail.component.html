@@ -1,0 +1,44 @@
+<mat-card *ngIf="userDetail" class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{userDetail.firstName}}{{userDetail.lastName}}</mat-card-title>
+      <mat-card-subtitle>{{userDetail.email}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item>
+                <div matLine>
+                    Tanggal Lahir :
+                    <button mat-button>{{userDetail.birthDate}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Salary :
+                    <button mat-button>{{userDetail.basicSalary}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Status :
+                    <button mat-button>{{userDetail.status}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Group :
+                    <button mat-button>{{userDetail.group}}</button>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div matLine>
+                    Deskripsi :
+                    <button mat-button>{{userDetail.description}}</button>
+                </div>
+            </mat-list-item>
+        </mat-list>
+        <button routerLink="/list" mat-raised-button color="accent">
+            Ok
+          </button>
+    </mat-card-content>
+  </mat-card>

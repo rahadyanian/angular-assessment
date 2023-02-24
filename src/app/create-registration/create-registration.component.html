@@ -1,0 +1,71 @@
+<div class="d-flex justify-content-between">
+    <button routerLink="/list" mat-raised-button color="accent">
+        List Karyawan
+      </button>
+</div>
+<div class="registration-form m-3 p-4">
+    <form [formGroup]="registerForm">
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field style="text-align: center;" appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input formControlName="username" matInput placeholder="Username">
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input formControlName="firstName" matInput placeholder="First Name">
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input formControlName="lastName" matInput placeholder="Last Name">
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input formControlName="email" matInput placeholder="Email" type="email" name="email" ngMode email>
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Tanggal Lahir</mat-label>
+                    <input formControlName="birthDate" matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Salary</mat-label>
+                    <input type="number" formControlName="basicSalary" matInput placeholder="Salary">
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Status</mat-label>
+                    <input formControlName="status" matInput placeholder="Status">
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Group</mat-label>
+                    <input formControlName="group" matInput placeholder="Group">
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Deskripsi</mat-label>
+                    <input formControlName="description" matInput placeholder="Deskripsi">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="text-center">
+        <button (click)="submit()" class="mt-4" mat-raised-button color="accent">Submit</button>
+        </div>
+    </form>
+</div>
